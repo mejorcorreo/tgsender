@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 chatId=<YOUR_CHAT_ID>
 botToken=<YOUR_BOT_TOKEN>
@@ -10,8 +10,6 @@ file_path="$1"
 if [ ! -f "$file_path" ]; then echo "Error: File not found: $file_path" exit 1 fi
 
 filename=$(basename "$file_path") username=$(basename "$(dirname "$file_path")") date_str=$(date '+%Y-%m-%d')
-
-Определяем тип файла по имени
 
 if echo "$filename" | grep -qi "routes"; then caption="🧭 Маршруты для `$username` от $date_str" else caption="📄 Конфигурация WireGuard для `$username` от $date_str" fi
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-chatId=***REMOVED***
-botToken=***REMOVED***
+chatId=<YOUR_CHAT_ID>
+botToken=<YOUR_BOT_TOKEN>
 
 if [ -z "$1" ]; then
     echo "Usage: $0 <path_to_file>"
